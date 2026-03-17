@@ -283,54 +283,92 @@ void assert_failed(uint8_t *file, uint32_t line)
 ## DUTY CYCLE AND FREQUENCY CALCULATION 
 ### FOR PULSE AT 5000
 
-TON = 
-TOFF=
-TOTAL TIME = 
-FREQUENCY = 1/(TOTAL TIME)
-TON = 5 × 0.1 = 0.5
 
-TOFF = 2 × 0.1 = 0.2
+TON = 1.55 × 0.2
+= 0.31 ms
 
-TOTAL TIME = TON + TOFF = 0.5 + 0.2 = 0.7
+TOFF = 1.55 × 0.2
+= 0.31 ms
 
-FREQUENCY = 1 / (TOTAL TIME) = 1.43
+Total Time = TON + TOFF
+= 0.31 + 0.31
+= 0.62 ms
+= 0.62 × 10⁻³ sec
 
-DUTY RATIO = TON / (TON + TOFF) = 0.5 / 0.7 = 0.71
+Frequency = 1 / Total Time
+
+= 1 / (0.62 × 10⁻³)
+
+= 1.6129 × 10³ Hz
+
+= 1.6 kHz
+
+Duty Ratio = TON / (TON + TOFF)
+
+= 0.31 / 0.62
+
+= 0.5
 
 
 ### FOR PULSE AT 7000
 
-TON = 
-TOFF=
-TOTAL TIME = 
-FREQUENCY = 1/(TOTAL TIME)
+TON = 2.2 × 0.2
+= 0.44 ms
 
-TON = 6 × 0.1 = 0.6
+TOFF = 0.9 × 0.2
+= 0.18 ms
 
-TOFF = 1.5 × 0.1 = 0.15
+Total Time = TON + TOFF
 
-TOTAL TIME = TON + TOFF = 0.6 + 0.15 = 0.75
+= 0.44 + 0.18
 
-FREQUENCY = 1 / (TOTAL TIME) = 1.33
+= 0.62 ms
 
-DUTY RATIO = TON / (TON + TOFF) = 0.6 / 0.75 = 0.8
+= 0.62 × 10⁻³ sec
+
+Frequency = 1 / Total Time
+
+= 1 / (0.62 × 10⁻³)
+
+= 1.6129 × 10³ Hz
+
+= 1.6 kHz
+
+Duty Ratio = TON / (TON + TOFF)
+
+= 0.44 / 0.62
+
+= 0.71
 
 ### FOR PULSE AT 9000
 
-TON = 
-TOFF=
-TOTAL TIME = 
-FREQUENCY = 1/(TOTAL TIME)
-TON = 7 × 0.1 = 0.7
+TON = 2.8 × 0.2
+= 0.56 ms
 
-TOFF = 1 × 0.1 = 0.1
+TOFF = 0.3 × 0.2
+= 0.06 ms
 
-TOTAL TIME = TON + TOFF = 0.7 + 0.1 = 0.8
+Total Time = TON + TOFF
 
-FREQUENCY = 1 / (TOTAL TIME) = 1.25
+= 0.56 + 0.06
 
-DUTY RATIO = TON / (TON + TOFF) = 0.7 / 0.8 = 0.87
+= 0.62 ms
 
+= 0.62 × 10⁻³ sec
+
+Frequency = 1 / Total Time
+
+= 1 / (0.62 × 10⁻³)
+
+= 1.6129 × 10³ Hz
+
+= 1.6 kHz
+
+Duty Ratio = TON / (TON + TOFF)
+
+= 0.56 / 0.62
+
+= 0.90
 ## Result :
 A PWM Signal is generated using the following frequency and various duty cycles are simulated .
 
